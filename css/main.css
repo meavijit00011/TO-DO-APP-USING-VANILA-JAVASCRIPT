@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+body {
+  background-color: rgb(87, 82, 82);
+}
+.header {
+  height: 200px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../img/header_background_img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header h2 {
+  color: #fff;
+  letter-spacing: 4px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 30px;
+}
+.header h4 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+.header .userName {
+  text-transform: capitalize;
+}
+.header .header_options_button {
+  width: fit-content;
+  margin: 20px auto;
+}
+.header .header_options_button .button1,
+.button2 {
+  padding: 5px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.header .header_options_button .button1 {
+  background: green;
+}
+.header .header_options_button .button2 {
+  background: orange;
+}
+.user_input {
+  width: 100vw;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ccc;
+}
+.user_input .input_field {
+  border: 1px solid #95a5a6;
+  padding: 5px 10px;
+  width: 250px;
+  border-radius: 20px;
+  outline: none;
+}
+.user_input .input_field:focus {
+  border-color: rgb(23, 206, 23);
+}
+.user_input button {
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+.user_input .fa-check-circle {
+  color: green;
+}
+.task_list_header {
+  color: orange;
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.task_list {
+  margin-top: 40px;
+}
+.task_list .task {
+  height: 40px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  background: #ccc;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.task_list .task .task_left {
+  display: flex;
+  align-items: center;
+  flex-basis: 80%;
+}
+.task_list .task .task_left P {
+  width: 211px;
+  white-space: nowrap;
+  overflow: scroll;
+}
+.task_list .task .task_left P::-webkit-scrollbar {
+  display: none;
+}
+.task_list .task .task_left .input_checkbox {
+  margin-right: 10px;
+}
+.task_list .task .task_left .input_checkbox:checked + p {
+  text-decoration: line-through;
+}
+
+.task_list .task .task_right button {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: rgb(223, 73, 73);
+  cursor: pointer;
+  visibility: hidden;
+}
+.task_list .task:hover .fa-trash-alt {
+  visibility: visible;
+}
+
+/* modal css */
+
+.modal_container {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.modal_container .modal {
+  background-color: #fff;
+  height: 200px;
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+.modal_container .modal .modal_input {
+  display: block;
+  margin: 20px auto;
+  padding: 7px 5px;
+  width: 200px;
+  outline: none;
+}
+.modal .modal_input_submit {
+  outline: none;
+  border: none;
+  padding: 8px 40px;
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+}

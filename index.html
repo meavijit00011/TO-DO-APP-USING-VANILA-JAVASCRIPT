@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List App</title>
+    <script
+      src="https://kit.fontawesome.com/a2b3fce468.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./img/ToDo.png" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="modal_container">
+      <div class="modal">
+        <h2>Enter Your Name</h2>
+        <input type="text" placeholder="Enter Your Name" class="modal_input" />
+        <button class="modal_input_submit">Enter</button>
+      </div>
+    </div>
+    <div class="header">
+      <h2>To Do List App</h2>
+      <h4>Hi , <span class="userName">User</span></h4>
+      <h4>
+        <span class="weekday">Wed </span>, <span class="date">23</span>
+        <span class="month">Aug</span>
+      </h4>
+      <div class="header_options_button">
+        <button class="button1">
+          Clear Tasks Done (<span class="clear_tasks_done_button">0</span>)
+        </button>
+        <button class="button2">
+          Reset All Tasks (<span class="reset_app_button">0</span>)
+        </button>
+      </div>
+    </div>
+    <!-- App Header -->
+    <div class="user_input">
+      <input
+        type="text"
+        placeholder="Type Your To Dosss Here"
+        class="input_field"
+      />
+      <button class="task_add_button">
+        <i class="far fa-check-circle fa-2x"></i>
+      </button>
+    </div>
+    <!-- user task input -->
+    <h2 class="task_list_header">Your Tasks :-</h2>
+    <!-- tasklist header -->
+    <div class="task_list"></div>
+    <!-- tasklist -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
